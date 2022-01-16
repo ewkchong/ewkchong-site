@@ -7,29 +7,31 @@
     <meta name="description" content="The personal website of Edward Chong, an aspiring web developer and software engineer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/styles.css"/>
     <title>Edward Chong - Web Developer</title>
   </head>
   <body>
     <header>
-      <nav id="navbar">
-          <div id="initials-photo">
-              <img src="" alt="An image of my face">
-              <h2>EC</h2>
+      <nav id="navbar" class="flex align-center">
+          <img src="" alt="An image of my face">
+          <h2 class="name-header flex-start">EC</h2>
+          <div id="links" class="flex-end">
+            <a href="/html/index.html">HOME</a>
+            <a href="/">PROJECTS</a>
+            <a href="/">BLOG</a>
+            <a href="/">ABOUT</a>
           </div>
-          <a href="">Home</a>
-          <a href="">Projects</a>
-          <a href="">Blog</a>
-          <a href="">About</a>
         </nav>
       </header>
-    <hr>
-    <article class="hero">
-      <h1>Hey! I'm Edward.<br>
-        I develop web applications.
-      </h1>
-      <button>Download My Resume</button>
+    <hr class="nav-divider">
+    <article class="hero flex">
+      <div id="hero-left-section" class="flex flex-column">
+        <h1 id="hero-text">Hey! I'm Edward.<br>
+          I develop web applications.
+        </h1>
+        <button id="hero-button">Download My Resume</button>  
+      </div>
       <img src="" alt="Myself, seated in a chair">
     </article>
   </body>
