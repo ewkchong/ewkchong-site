@@ -2,6 +2,8 @@ $primary-font: 'Rubik';
 
 body {
     font-family: $primary-font, sans-serif;
+    height: 90vh;
+    overflow: hidden;
 }
 
 .flex {
@@ -30,6 +32,10 @@ body {
     margin-right: -0.5rem;
 }
 
+.hero {
+    justify-content: center;
+}
+
 #hero-left-section {
     margin-left: 4rem;
 }
@@ -40,28 +46,38 @@ body {
     margin-top: 15rem;
 }
 
-#hero-button {
+#hero-button-link {
     width: auto;
     align-self: center;
+}
+
+.hero-button {
     padding: 0.8rem 2.2rem 0.8rem 2.2rem;
     font-family: inherit;
     font-size: 1rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     border-color: black;
-    background-color: transparent;
+    background-color: white;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.13s;
+}
+
+.hero-button-hover {
+    color: white;
+    background-color: black;
 }
 
 #navbar {
     margin: 0;
     h2 {
-        margin: 0 !important;
+        margin: 0 0 0 1rem !important;
     }
 }
 
 #links a {
     text-decoration: none;
     color: black;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 300;
     margin: 0 1.65rem 0 1.65rem;
 }
